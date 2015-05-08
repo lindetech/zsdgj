@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  XXZSDGJ
+//
+//  Created by 肖旋 on 15/5/7.
+//  Copyright (c) 2015年 xiaoxuan. All rights reserved.
+//
+
+#ifndef XXZSDGJ_PrefixHeader_pch
+#define XXZSDGJ_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+
+#define TEXT_COLOR_LIGHT [UIColor colorWithRed:176.0/255.0 green:191.0/255.0 blue:199.0/255.0 alpha:1.0]
+#define TEXT_COLOR [UIColor colorWithRed:11.0/255.0 green:37.0/255.0 blue:51.0/255.0 alpha:1.0]
+#define MAIN_COLOR [UIColor colorWithRed:1.0/255.0 green:207.0/255.0 blue:208.0/255.0 alpha:1.0]
