@@ -7,9 +7,12 @@
 //
 
 #import "XXServiceViewController.h"
+#import "XXAreaViewController.h"
 
 #define WIDTH self.view.frame.size.width
 #define HEIGHT self.view.frame.size.height
+
+#define _HEIGHT /(667 - 20 - 44 - 49)
 
 @interface XXServiceViewController ()
 
@@ -39,6 +42,7 @@
     UIButton * areaButton = [[UIButton alloc] initWithFrame:CGRectMake(16, 34, 20, 20)];
     [areaButton setImage:[UIImage imageNamed:@"icon_actionbar_nav.png"] forState:UIControlStateNormal];
     [areaButton setImage:[UIImage imageNamed:@"icon_actionbar_nav_press.png"] forState:UIControlStateHighlighted];
+    [areaButton addTarget:self action:@selector(areaButtonOnClick:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:areaButton];
     
     UIButton * callButton = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width - 36, 34, 20, 20)];
@@ -63,11 +67,17 @@
     NSLog(@"%f,%f,%f,%f,", self.view.frame.origin.x,self.view.frame.origin.y,self.view.frame.size.width,self.view.frame.size.height);
 }
 
+- (void)areaButtonOnClick:(id)sender
+{
+    XXAreaViewController * temp = [[XXAreaViewController alloc] init];
+    [self.navigationController pushViewController:temp animated:YES];
+}
+
 - (void)creatBackground
 {
-    UIView * view = [[UIView alloc] initWithFrame:CGRectMake(0, HEIGHT - 250, WIDTH, 250)];
-    view.backgroundColor = MAIN_COLOR;
-    [self.view addSubview:view];
+    UIImageView * backImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, HEIGHT -  49 - 272, WIDTH, 272)];
+    backImageView.image = [UIImage imageNamed:@"background_tall.png"];
+    [self.view addSubview:backImageView];
     
     UIScrollView * scr = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 68, WIDTH, HEIGHT - 68 - 49)];
     scr.contentSize = CGSizeMake(WIDTH * 3, HEIGHT - 68 - 49);
@@ -90,6 +100,19 @@
         label1.textColor = TEXT_COLOR_LIGHT;
         [scr addSubview:label1];
         
+        UILabel * label2 = [[UILabel alloc] initWithFrame:CGRectMake(i * WIDTH + 135, scr.frame.size.height - 144 - 14 - 24, 90, 14)];
+        label2.text = @"基本价格￥";
+        label2.textColor = [UIColor whiteColor];
+        label2.font = [UIFont fontWithName:@"SourceHanSansCN-Regular" size:15];
+        [scr addSubview:label2];
+        
+        UILabel * label3 = [[UILabel alloc] initWithFrame:CGRectMake(i * WIDTH + 205, scr.frame.size.height - 144 - 60 - 24, WIDTH - 205 - 23.5, 60)];
+        label3.textColor = [UIColor whiteColor];
+        label3.text = @"0.00";
+        label3.textAlignment = NSTextAlignmentRight;
+        label3.font = [UIFont fontWithName:@"SourceHanSansCN-Regular" size:75];
+        [scr addSubview:label3];
+        
         UILabel * carIntro = [[UILabel alloc] initWithFrame:CGRectMake(i * WIDTH + 23.5, scr.frame.size.height - 144, WIDTH - 47, 88)];
         carIntro.backgroundColor = [UIColor clearColor];
         NSString * labelText = @"我们都有一个家名字叫中国兄弟姐妹都很多景色也不错家里盘着两条龙是长江与黄河呀还有珠穆朗玛峰儿是最高山坡我们都有一个家名字叫中国我们都有一个家名字叫中国";
@@ -103,11 +126,14 @@
         carIntro.numberOfLines = 0;
         [scr addSubview:carIntro];
         
-        UIImageView * carImage = [[UIImageView alloc] initWithFrame:CGRectMake(i * WIDTH + 23.5, 28, WIDTH - 47, 144)];
-        carImage.image = [UIImage imageNamed:@"金杯.png"];
+        UIImageView * carImage = [[UIImageView alloc] initWithFrame:CGRectMake(i * WIDTH + 23.5, 28 * 28 _HEIGHT, WIDTH - 47, HEIGHT * 144 _HEIGHT)];
+        carImage.image = [UIImage imageNamed:@"货车朝右1.png"];
         [scr addSubview:carImage];
+        
     }
     [self.view addSubview:scr];
+    
+    
     
     _XXPageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, HEIGHT - 56 - 49, WIDTH, 56)];
     _XXPageControl.backgroundColor = MAIN_COLOR;

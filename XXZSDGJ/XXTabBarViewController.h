@@ -10,4 +10,6 @@
 
 @interface XXTabBarViewController : UITabBarController
 
+@property (nonatomic, strong) UIView * XXTabbar;
+
 @end

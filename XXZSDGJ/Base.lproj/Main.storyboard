@@ -10,6 +10,7 @@
             <objects>
                 <navigationController id="8Zi-DN-K1h" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="eHR-J0-cSV"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wk0-vH-W0f">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -20,20 +21,22 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ZA-Or-tZy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="180" y="-351"/>
+            <point key="canvasLocation" x="245.5" y="-463.5"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="5EQ-g1-Go2">
             <objects>
                 <tableViewController id="Yxu-IC-Esl" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3IO-Yw-DSs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dha-gI-vKL">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dha-gI-vKL" id="PcQ-Jg-LSK">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -47,7 +50,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RTI-n1-MiC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="782" y="962"/>
+            <point key="canvasLocation" x="781.5" y="897.5"/>
         </scene>
         <!--Item-->
         <scene sceneID="tT8-pe-VBW">
@@ -64,18 +67,18 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="32N-9b-p5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="180" y="614"/>
+            <point key="canvasLocation" x="245.5" y="733.5"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="SR7-uC-NrM">
             <objects>
                 <viewController id="sGI-nd-Dti" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="wPY-8h-ep7"/>
-                        <viewControllerLayoutGuide type="bottom" id="y8T-QF-CG3"/>
+                        <viewControllerLayoutGuide type="top" id="gJW-fB-Q1v"/>
+                        <viewControllerLayoutGuide type="bottom" id="e3O-47-wVD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Y6f-CJ-9Hw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qtc-WL-g0b">
@@ -92,18 +95,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NB7-EX-SlY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="782" y="109"/>
+            <point key="canvasLocation" x="781.5" y="108.5"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="8eb-Ri-1Al">
             <objects>
                 <viewController id="9Rd-Sf-wIs" customClass="XXServiceViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="IkL-gX-C1y"/>
-                        <viewControllerLayoutGuide type="bottom" id="wNX-Po-oTt"/>
+                        <viewControllerLayoutGuide type="top" id="q7a-eK-29i"/>
+                        <viewControllerLayoutGuide type="bottom" id="wxe-UT-4rM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ihR-r5-ULI">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -112,13 +115,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mbg-XE-k5e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="782" y="-651"/>
+            <point key="canvasLocation" x="781.5" y="-651.5"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="mUg-C3-Bzz">
             <objects>
                 <tabBarController id="8KX-XR-T0j" customClass="XXTabBarViewController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="XzP-d0-8l9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -132,7 +136,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D4k-TB-UMW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-286" y="109"/>
+            <point key="canvasLocation" x="-286" y="108.99999999999999"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

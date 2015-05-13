@@ -19,19 +19,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     [self custemizeTabBar];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)custemizeTabBar
 {
     self.tabBar.hidden = YES;
-    UIView * tabBarView = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 49, self.view.frame.size.width, 49)];
+    self.XXTabbar = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 49, self.view.frame.size.width, 49)];
     
     NSArray * titles = @[@"服 务", @"订 单", @"我 的"];
     NSArray * imageNames = @[@"icon_btm_service_press.png", @"icon_btm_order_press.png", @"icon_btm_mine_press.png"];
@@ -50,7 +48,7 @@
         
         button.tag = 10 + i;
         
-        [tabBarView addSubview:button];
+        [self.XXTabbar addSubview:button];
         
         UILabel * label = [[UILabel alloc] initWithFrame:CGRectMake(self.view.frame.size.width / 6 * (i * 2 + 1)  - 13, 28, 26, 20)];
         label.text = titles[i];
@@ -66,14 +64,14 @@
             label.textColor = TEXT_COLOR;
         }
         
-        
         [_LabelsArray addObject:label];
-        [tabBarView addSubview:label];
+        [self.XXTabbar addSubview:label];
     }
     
-    tabBarView.backgroundColor = [UIColor whiteColor];
-
-    [self.view addSubview:tabBarView];
+    self.XXTabbar.backgroundColor = [UIColor whiteColor];
+    NSLog(@"%lu", (unsigned long)self.view.subviews.count);
+    [self.view addSubview:self.XXTabbar];
+    NSLog(@"%lu", (unsigned long)self.view.subviews.count);
 }
 
 - (void)onClick:(UIButton *)button
