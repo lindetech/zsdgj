@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>371751C6-20AA-4321-86D2-CCED2455F7F9</string>
 	<key>IDESourceControlProjectName</key>
-	<string>XXZSDGJ</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>59283E77D356B24AA6991E84B01C65769330E961</key>
 		<string>https://github.com/stormares/-.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>XXZSDGJ.xcodeproj</string>
+	<string>XXZSDGJ.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>59283E77D356B24AA6991E84B01C65769330E961</key>

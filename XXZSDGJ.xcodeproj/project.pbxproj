@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2019ED4E1B05EA7000ED24AD /* XXOrderListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2019ED4D1B05EA7000ED24AD /* XXOrderListViewController.m */; };
+		2019ED571B05EC9C00ED24AD /* XXOrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2019ED551B05EC9C00ED24AD /* XXOrderCell.m */; };
+		2019ED581B05EC9C00ED24AD /* XXOrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2019ED561B05EC9C00ED24AD /* XXOrderCell.xib */; };
 		2078207B1AFB44E0006B0DF2 /* SourceHanSansCN-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 207820741AFB44E0006B0DF2 /* SourceHanSansCN-Bold.otf */; };
 		2078207C1AFB44E0006B0DF2 /* SourceHanSansCN-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 207820751AFB44E0006B0DF2 /* SourceHanSansCN-ExtraLight.otf */; };
 		2078207D1AFB44E0006B0DF2 /* SourceHanSansCN-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 207820761AFB44E0006B0DF2 /* SourceHanSansCN-Heavy.otf */; };
@@ -29,6 +32,8 @@
 		20AE225E1AFA0DF50064D5F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20AE225D1AFA0DF50064D5F6 /* Images.xcassets */; };
 		20AE22611AFA0DF50064D5F6 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20AE225F1AFA0DF50064D5F6 /* LaunchScreen.xib */; };
 		20AE226D1AFA0DF50064D5F6 /* XXZSDGJTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AE226C1AFA0DF50064D5F6 /* XXZSDGJTests.m */; };
+		20AE48551B0482480037BF7A /* XXAreaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AE48531B0482480037BF7A /* XXAreaCell.m */; };
+		20AE48561B0482480037BF7A /* XXAreaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20AE48541B0482480037BF7A /* XXAreaCell.xib */; };
 		20AFACC41B01AA34003EE532 /* XXAreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AFACC31B01AA34003EE532 /* XXAreaViewController.m */; };
 		20B1B4F31AFCB306001771DA /* 金杯.png in Resources */ = {isa = PBXBuildFile; fileRef = 20B1B4F21AFCB306001771DA /* 金杯.png */; };
 		20B238D61AFAFFC700B84966 /* XXServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B238D51AFAFFC700B84966 /* XXServiceViewController.m */; };
@@ -344,6 +349,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2019ED4C1B05EA7000ED24AD /* XXOrderListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XXOrderListViewController.h; path = XXZSDGJ/OrderList/XXOrderListViewController.h; sourceTree = "<group>"; };
+		2019ED4D1B05EA7000ED24AD /* XXOrderListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XXOrderListViewController.m; path = XXZSDGJ/OrderList/XXOrderListViewController.m; sourceTree = "<group>"; };
+		2019ED541B05EC9C00ED24AD /* XXOrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XXOrderCell.h; path = XXZSDGJ/OrderList/XXOrderCell.h; sourceTree = "<group>"; };
+		2019ED551B05EC9C00ED24AD /* XXOrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XXOrderCell.m; path = XXZSDGJ/OrderList/XXOrderCell.m; sourceTree = "<group>"; };
+		2019ED561B05EC9C00ED24AD /* XXOrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XXOrderCell.xib; path = XXZSDGJ/OrderList/XXOrderCell.xib; sourceTree = "<group>"; };
 		207820741AFB44E0006B0DF2 /* SourceHanSansCN-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceHanSansCN-Bold.otf"; path = "XXZSDGJ/Font/SourceHanSansCN-Bold.otf"; sourceTree = "<group>"; };
 		207820751AFB44E0006B0DF2 /* SourceHanSansCN-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceHanSansCN-ExtraLight.otf"; path = "XXZSDGJ/Font/SourceHanSansCN-ExtraLight.otf"; sourceTree = "<group>"; };
 		207820761AFB44E0006B0DF2 /* SourceHanSansCN-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SourceHanSansCN-Heavy.otf"; path = "XXZSDGJ/Font/SourceHanSansCN-Heavy.otf"; sourceTree = "<group>"; };
@@ -366,6 +376,9 @@
 		20AE22661AFA0DF50064D5F6 /* XXZSDGJTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XXZSDGJTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20AE226B1AFA0DF50064D5F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20AE226C1AFA0DF50064D5F6 /* XXZSDGJTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XXZSDGJTests.m; sourceTree = "<group>"; };
+		20AE48521B0482480037BF7A /* XXAreaCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XXAreaCell.h; path = XXZSDGJ/Service/XXAreaCell.h; sourceTree = "<group>"; };
+		20AE48531B0482480037BF7A /* XXAreaCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XXAreaCell.m; path = XXZSDGJ/Service/XXAreaCell.m; sourceTree = "<group>"; };
+		20AE48541B0482480037BF7A /* XXAreaCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XXAreaCell.xib; path = XXZSDGJ/Service/XXAreaCell.xib; sourceTree = "<group>"; };
 		20AFACC21B01AA34003EE532 /* XXAreaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XXAreaViewController.h; path = XXZSDGJ/Service/XXAreaViewController.h; sourceTree = "<group>"; };
 		20AFACC31B01AA34003EE532 /* XXAreaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XXAreaViewController.m; path = XXZSDGJ/Service/XXAreaViewController.m; sourceTree = "<group>"; };
 		20B1B4F21AFCB306001771DA /* 金杯.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "金杯.png"; path = "XXZSDGJ/Images/金杯.png"; sourceTree = "<group>"; };
@@ -775,6 +788,11 @@
 		20AE227A1AFA11960064D5F6 /* OrderList */ = {
 			isa = PBXGroup;
 			children = (
+				2019ED4C1B05EA7000ED24AD /* XXOrderListViewController.h */,
+				2019ED4D1B05EA7000ED24AD /* XXOrderListViewController.m */,
+				2019ED541B05EC9C00ED24AD /* XXOrderCell.h */,
+				2019ED551B05EC9C00ED24AD /* XXOrderCell.m */,
+				2019ED561B05EC9C00ED24AD /* XXOrderCell.xib */,
 			);
 			name = OrderList;
 			sourceTree = "<group>";
@@ -786,6 +804,9 @@
 				20B238D51AFAFFC700B84966 /* XXServiceViewController.m */,
 				20AFACC21B01AA34003EE532 /* XXAreaViewController.h */,
 				20AFACC31B01AA34003EE532 /* XXAreaViewController.m */,
+				20AE48521B0482480037BF7A /* XXAreaCell.h */,
+				20AE48531B0482480037BF7A /* XXAreaCell.m */,
+				20AE48541B0482480037BF7A /* XXAreaCell.xib */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -1359,6 +1380,7 @@
 				20B239801AFB004D00B84966 /* icon_service@1x.png in Resources */,
 				20B2394B1AFB004D00B84966 /* icon_bankcard_white@1x.png in Resources */,
 				20B239661AFB004D00B84966 /* icon_name@1x.png in Resources */,
+				20AE48561B0482480037BF7A /* XXAreaCell.xib in Resources */,
 				20B2394A1AFB004D00B84966 /* icon_avatar@1x.png in Resources */,
 				20B23A131AFB006500B84966 /* icon_coupon@2x.png in Resources */,
 				20B23A071AFB006500B84966 /* icon_actionbar_ok_press@2x.png in Resources */,
@@ -1419,6 +1441,7 @@
 				20B239561AFB004D00B84966 /* icon_date_white@1x.png in Resources */,
 				20B23A231AFB006500B84966 /* icon_minus_press@2x.png in Resources */,
 				20B23A291AFB006500B84966 /* icon_nav_focus@2x.png in Resources */,
+				2019ED581B05EC9C00ED24AD /* XXOrderCell.xib in Resources */,
 				2078207E1AFB44E0006B0DF2 /* SourceHanSansCN-Light.otf in Resources */,
 				20B23B161AFB009300B84966 /* icon_step@3x.png in Resources */,
 				20B23ACE1AFB009300B84966 /* icon_btm_mine_press@3x.png in Resources */,
@@ -1539,12 +1562,15 @@
 				207820831AFB45BD006B0DF2 /* SourceHanSansCN-ExtraLight.otf in Sources */,
 				207820841AFB45BD006B0DF2 /* SourceHanSansCN-Heavy.otf in Sources */,
 				207820851AFB45BD006B0DF2 /* SourceHanSansCN-Light.otf in Sources */,
+				2019ED571B05EC9C00ED24AD /* XXOrderCell.m in Sources */,
 				207820861AFB45BD006B0DF2 /* SourceHanSansCN-Medium.otf in Sources */,
 				207820871AFB45BD006B0DF2 /* SourceHanSansCN-Normal.otf in Sources */,
 				207820881AFB45BD006B0DF2 /* SourceHanSansCN-Regular.otf in Sources */,
 				20B238D61AFAFFC700B84966 /* XXServiceViewController.m in Sources */,
+				2019ED4E1B05EA7000ED24AD /* XXOrderListViewController.m in Sources */,
 				20B23B1E1AFB2D9700B84966 /* XXTabBarViewController.m in Sources */,
 				20AE22591AFA0DF50064D5F6 /* ViewController.m in Sources */,
+				20AE48551B0482480037BF7A /* XXAreaCell.m in Sources */,
 				20AE22561AFA0DF50064D5F6 /* AppDelegate.m in Sources */,
 				20AFACC41B01AA34003EE532 /* XXAreaViewController.m in Sources */,
 				20AE22531AFA0DF50064D5F6 /* main.m in Sources */,

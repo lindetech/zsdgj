@@ -10,4 +10,10 @@
 
 @interface XXAreaViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
+@property (nonatomic, copy) void(^block)(NSString *);
+
+@property (nonatomic, strong) UILabel * areaLabel;
+
+@property (nonatomic, strong) NSString * currentArea;
+
 @end

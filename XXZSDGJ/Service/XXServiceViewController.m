@@ -21,6 +21,7 @@
 @implementation XXServiceViewController
 {
     UIPageControl * _XXPageControl;
+    UILabel * _areaLabel;
 }
 
 - (void)viewDidLoad {
@@ -28,6 +29,12 @@
     // Do any additional setup after loading the view.
     [self customizeNavigationBar];
     [self creatBackground];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:YES];
+    [self.navigationController.tabBarController.view.subviews[2] setAlpha:1];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,11 +64,11 @@
     titleLabel.textColor = TEXT_COLOR;
     [self.view addSubview:titleLabel];
     
-    UILabel * areaLabel = [[UILabel alloc] initWithFrame:CGRectMake(44, 34, 40, 20)];
-    areaLabel.text = @"北京";
-    areaLabel.textColor = TEXT_COLOR;
-    areaLabel.font = [UIFont fontWithName:@"SourceHanSansCN-Regular" size:16];
-    [self.view addSubview:areaLabel];
+    _areaLabel = [[UILabel alloc] initWithFrame:CGRectMake(44, 34, 40, 20)];
+    _areaLabel.text = @"北京";
+    _areaLabel.textColor = TEXT_COLOR;
+    _areaLabel.font = [UIFont fontWithName:@"SourceHanSansCN-Regular" size:16];
+    [self.view addSubview:_areaLabel];
     
     
     NSLog(@"%f,%f,%f,%f,", self.view.frame.origin.x,self.view.frame.origin.y,self.view.frame.size.width,self.view.frame.size.height);
@@ -70,6 +77,10 @@
 - (void)areaButtonOnClick:(id)sender
 {
     XXAreaViewController * temp = [[XXAreaViewController alloc] init];
+    temp.block = ^(NSString * areaName){
+        _areaLabel.text = areaName;
+    };
+    temp.currentArea = _areaLabel.text;
     [self.navigationController pushViewController:temp animated:YES];
 }
 

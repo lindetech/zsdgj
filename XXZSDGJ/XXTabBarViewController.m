@@ -69,9 +69,7 @@
     }
     
     self.XXTabbar.backgroundColor = [UIColor whiteColor];
-    NSLog(@"%lu", (unsigned long)self.view.subviews.count);
     [self.view addSubview:self.XXTabbar];
-    NSLog(@"%lu", (unsigned long)self.view.subviews.count);
 }
 
 - (void)onClick:(UIButton *)button

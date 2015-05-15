@@ -23,35 +23,6 @@
             </objects>
             <point key="canvasLocation" x="245.5" y="-463.5"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="5EQ-g1-Go2">
-            <objects>
-                <tableViewController id="Yxu-IC-Esl" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="3IO-Yw-DSs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dha-gI-vKL">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dha-gI-vKL" id="PcQ-Jg-LSK">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Yxu-IC-Esl" id="Pbx-oc-PCg"/>
-                            <outlet property="delegate" destination="Yxu-IC-Esl" id="Bew-lO-a7j"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="U3v-tQ-BNR"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RTI-n1-MiC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="781.5" y="897.5"/>
-        </scene>
         <!--Item-->
         <scene sceneID="tT8-pe-VBW">
             <objects>
@@ -62,7 +33,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Yxu-IC-Esl" kind="relationship" relationship="rootViewController" id="UHR-f4-jHC"/>
+                        <segue destination="sGI-nd-Dti" kind="relationship" relationship="rootViewController" id="tkO-Kk-rUN"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="32N-9b-p5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -72,7 +43,7 @@
         <!--Item 2-->
         <scene sceneID="SR7-uC-NrM">
             <objects>
-                <viewController id="sGI-nd-Dti" sceneMemberID="viewController">
+                <viewController id="sGI-nd-Dti" customClass="XXOrderListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gJW-fB-Q1v"/>
                         <viewControllerLayoutGuide type="bottom" id="e3O-47-wVD"/>
@@ -92,10 +63,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="314-ML-WyF"/>
+                    <navigationItem key="navigationItem" id="rKk-QK-Cah"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NB7-EX-SlY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="781.5" y="108.5"/>
+            <point key="canvasLocation" x="823.5" y="738.5"/>
         </scene>
         <!--Item 1-->
         <scene sceneID="8eb-Ri-1Al">
@@ -130,13 +102,27 @@
                     </tabBar>
                     <connections>
                         <segue destination="8Zi-DN-K1h" kind="relationship" relationship="viewControllers" id="bVj-B0-Ql1"/>
-                        <segue destination="sGI-nd-Dti" kind="relationship" relationship="viewControllers" id="X2X-zm-D3l"/>
                         <segue destination="ruP-IW-Nna" kind="relationship" relationship="viewControllers" id="hEU-kq-V0P"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D4k-TB-UMW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-286" y="108.99999999999999"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="KQP-pU-cjd">
+            <objects>
+                <navigationController id="y6C-gr-o1l" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="qsD-Ik-Zfh"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NdE-3m-G6h">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BrK-Y9-ZUK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245.5" y="-463.5"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
