@@ -35,6 +35,7 @@
 		20AE48551B0482480037BF7A /* XXAreaCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AE48531B0482480037BF7A /* XXAreaCell.m */; };
 		20AE48561B0482480037BF7A /* XXAreaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20AE48541B0482480037BF7A /* XXAreaCell.xib */; };
 		20AFACC41B01AA34003EE532 /* XXAreaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AFACC31B01AA34003EE532 /* XXAreaViewController.m */; };
+		20AFC0AB1B0B319F0088A90E /* icon_orderState@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20AFC0AA1B0B319F0088A90E /* icon_orderState@3x.png */; };
 		20B1B4F31AFCB306001771DA /* 金杯.png in Resources */ = {isa = PBXBuildFile; fileRef = 20B1B4F21AFCB306001771DA /* 金杯.png */; };
 		20B238D61AFAFFC700B84966 /* XXServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B238D51AFAFFC700B84966 /* XXServiceViewController.m */; };
 		20B2393A1AFB004D00B84966 /* icon_about@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20B238DA1AFB004D00B84966 /* icon_about@1x.png */; };
@@ -381,6 +382,7 @@
 		20AE48541B0482480037BF7A /* XXAreaCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = XXAreaCell.xib; path = XXZSDGJ/Service/XXAreaCell.xib; sourceTree = "<group>"; };
 		20AFACC21B01AA34003EE532 /* XXAreaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XXAreaViewController.h; path = XXZSDGJ/Service/XXAreaViewController.h; sourceTree = "<group>"; };
 		20AFACC31B01AA34003EE532 /* XXAreaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XXAreaViewController.m; path = XXZSDGJ/Service/XXAreaViewController.m; sourceTree = "<group>"; };
+		20AFC0AA1B0B319F0088A90E /* icon_orderState@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon_orderState@3x.png"; path = "XXZSDGJ/Images/@3x/icon_orderState@3x.png"; sourceTree = "<group>"; };
 		20B1B4F21AFCB306001771DA /* 金杯.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "金杯.png"; path = "XXZSDGJ/Images/金杯.png"; sourceTree = "<group>"; };
 		20B238D41AFAFFC700B84966 /* XXServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XXServiceViewController.h; path = XXZSDGJ/Service/XXServiceViewController.h; sourceTree = "<group>"; };
 		20B238D51AFAFFC700B84966 /* XXServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XXServiceViewController.m; path = XXZSDGJ/Service/XXServiceViewController.m; sourceTree = "<group>"; };
@@ -1046,6 +1048,7 @@
 		20B238D91AFB003C00B84966 /* @3x */ = {
 			isa = PBXGroup;
 			children = (
+				20AFC0AA1B0B319F0088A90E /* icon_orderState@3x.png */,
 				20B247271B03482400491D1A /* background_payment@3x.png */,
 				20B247281B03482400491D1A /* background_short@3x.png */,
 				20B247291B03482400491D1A /* background_tall@3x.png */,
@@ -1309,6 +1312,7 @@
 				20B2396E1AFB004D00B84966 /* icon_otherphone@1x.png in Resources */,
 				20B23ADC1AFB009300B84966 /* icon_female_select@3x.png in Resources */,
 				20B239891AFB004D00B84966 /* icon_starting@1x.png in Resources */,
+				20AFC0AB1B0B319F0088A90E /* icon_orderState@3x.png in Resources */,
 				20B23B0F1AFB009300B84966 /* icon_step_2@3x.png in Resources */,
 				20B2395F1AFB004D00B84966 /* icon_male_select@1x.png in Resources */,
 				20B23A1A1AFB006500B84966 /* icon_female_select@2x.png in Resources */,

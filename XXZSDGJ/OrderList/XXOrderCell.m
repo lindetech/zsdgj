@@ -11,12 +11,10 @@
 @implementation XXOrderCell
 
 - (void)awakeFromNib {
-    self.aview.layer.cornerRadius = 25;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
-    self.backgroundColor = [UIColor blackColor];
     // Configure the view for the selected state
 }
 
